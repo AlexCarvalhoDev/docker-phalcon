@@ -1,4 +1,4 @@
-FROM ubuntu:14.04
+FROM ubuntu:16.04
 
 MAINTAINER Alexandre Carvalho <alexandrejacarvalho@protonmail.com>
 
@@ -13,26 +13,24 @@ ENV SHELL /bin/bash
 # PACKAGES
 RUN apt-get update && apt-get install -y software-properties-common
 
-RUN apt-add-repository ppa:ondrej/php
-
 RUN apt-get update && apt-get install -y \
   git-core \
   vim \
   nginx \
   cron \
   curl \
-  php7.0 \
-  php7.0-fpm \
-  php7.0-cli \
-  php7.0-common \
-  php7.0-mbstring \
-  php7.0-gd \
-  php7.0-intl \
-  php7.0-xml \
-  php7.0-mysql \
-  php7.0-mcrypt \
-  php7.0-zip \
-  php7.0-curl \
+  php \
+  php-fpm \
+  php-cli \
+  php-common \
+  php-mbstring \
+  php-gd \
+  php-intl \
+  php-xml \
+  php-mysql \
+  php-mcrypt \
+  php-zip \
+  php-curl \
   php-xdebug \
   php-gmp
 
