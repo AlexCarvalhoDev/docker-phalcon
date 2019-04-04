@@ -1,6 +1,6 @@
 FROM ubuntu:14.04
 
-MAINTAINER Antonio Santos <antonio.santos@mobipium.com>
+MAINTAINER Alexandre Carvalho <alexandrejacarvalho@protonmail.com>
 
 # Environment
 ENV APPFOLDER /var/www/html/
@@ -11,11 +11,11 @@ ENV SETUPLOCALFOLDER /setup/
 ENV SHELL /bin/bash
 
 # PACKAGES
-RUN apt-get update && apt-get install -y --force-yes software-properties-common
+RUN apt-get update && apt-get install -y software-properties-common
 
 RUN apt-add-repository ppa:ondrej/php
 
-RUN apt-get update && apt-get install -y --force-yes \
+RUN apt-get update && apt-get install -y \
   git-core \
   vim \
   nginx \
