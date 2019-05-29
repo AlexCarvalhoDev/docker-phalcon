@@ -44,6 +44,7 @@ RUN apt-get install php7.0-phalcon
 RUN rm -rf /var/www/html/
 RUN mkdir /var/www/html/
 WORKDIR "${APPFOLDER}"
+RUN git clone https://github.com/AlexCarvalhoDev/phalcon-raw-app.git .
 
 
 # Phalcon config
